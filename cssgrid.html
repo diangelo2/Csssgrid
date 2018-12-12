@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSSGRID</title>
+
+	<link rel="stylesheet" type="text/css" href="general_style.css">
+
+	<style type="text/css">
+		.container{
+			display: grid;
+			grid-template-columns: 1fr 3fr 2fr;
+			grid-template-rows: 50px 1fr;
+			grid-template-areas: 
+				"B B B"
+				"G R Y";
+		}
+
+	#blue {
+		grid-area: B;
+	}
+
+	#green {
+		grid-area: G;
+	}
+
+	#red {
+		grid-area: R;
+	}
+
+	#yellow {
+		grid-area: Y;
+	}
+	</style>
+</head>
+<body>
+<div class="container">
+		<div id="blue" class="items">
+			🐻
+		</div>
+
+		<div id="green" class="items">
+			🎸
+		</div>
+
+		<div id="red" class="items">
+			🚀
+		</div>
+
+		<div id="purple" class="items">
+			💩
+		</div>
+
+		<div id="yellow" class="items">
+			☯️
+		</div>
+
+		<div id="orange" class="items">
+			🐙
+		</div>
+	</div>
+</body>
+</html>
